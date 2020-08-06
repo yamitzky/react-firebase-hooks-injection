@@ -16,7 +16,11 @@ export const AddTodo: React.FC<Props> = () => {
     return <></>
   }
   if (!user) {
-    return <p>TODOを追加するにはログインしてください</p>
+    return (
+      <p>
+        TODOを追加するにはログインしてください(メールアドレスは記録されます)
+      </p>
+    )
   }
   return (
     <p>

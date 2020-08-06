@@ -4,7 +4,8 @@ Hooks を注入することで React から Firebase を疎結合に使うサン
 
 ## デモ
 
-https://react-firebase-hooks-injection.web.app/
+- デモアプリ: https://react-firebase-hooks-injection.web.app/
+- Storybook: https://react-firebase-hooks-injection.web.app/__storybook/
 
 ![Aug-07-2020 05-13-25](https://user-images.githubusercontent.com/623449/89578280-dc298e80-d86c-11ea-8fab-b29c182ebba0.gif)
 

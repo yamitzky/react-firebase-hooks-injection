@@ -8,14 +8,14 @@ type Error = {
 
 type User = {
   uid: string
-  email: string | null
+  email?: string | null
 }
 
 export type AuthHooks = {
   useAuth(): {
-    user: User | undefined
+    user?: User
     loading: boolean
-    error: Error | undefined
+    error?: Error
   }
   useAuthAction(): {
     loginWithGoogle: () => Promise<void>

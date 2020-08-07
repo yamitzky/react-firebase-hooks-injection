@@ -1,6 +1,5 @@
 import { firebase } from '~/src/firebase'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
-import { firestore } from 'firebase'
 import { TodoHooks, Todo } from '~/src/hooks/todo'
 import { useCallback } from 'react'
 import { useAuth } from '~/src/hooks/auth'
@@ -31,5 +30,8 @@ export const useTodoAction: TodoHooks['useTodoAction'] = () => {
     },
     [user]
   )
-  return { addTodo }
+  const deleteTodo = useCallback(async (id: string) => {
+    await firebase.firestore().collection('todos').doc(id).delete()
+  }, [])
+  return { addTodo, deleteTodo }
 }

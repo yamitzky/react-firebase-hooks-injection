@@ -4,6 +4,7 @@ import { useClient } from '~/src/hooks/di'
 export type Todo = {
   id: string
   text: string
+  author: string
 }
 
 export type TodoHooks = {
@@ -14,6 +15,7 @@ export type TodoHooks = {
   }
   useTodoAction(): {
     addTodo: (text: string) => Promise<void>
+    deleteTodo: (id: string) => Promise<void>
   }
 }
 

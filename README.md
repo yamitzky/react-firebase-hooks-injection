@@ -20,4 +20,4 @@ yarn dev
 
 ## 解説
 
-https://tech.jxpress.net/
+https://tech.jxpress.net/entry/never-give-up-firebase
